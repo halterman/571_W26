@@ -4,8 +4,6 @@
 #include "GL/SGL.h"
 
 
-using namespace sgl;
-
 //  Represents a conceptual progress bar
 class Bar {
     int length;  //  Current bar length 
@@ -46,7 +44,7 @@ public:
 
 
 //  GUI to test our classes
-class BarWindow: public Window {
+class BarWindow: public sgl::Window {
     Bar bar;
     Counter counter;
 public:
@@ -54,20 +52,20 @@ public:
                          bar(Bar(lim)), counter(&bar) {}
     void paint() override {
         //  Draw the bar
-        set_color(BLACK);
-        draw_rectangle(10.0, 10.0, 30.0, 80.0);
-        set_color(RED);
-        fill_rectangle(10.0, 10.0, 30.0, 
+        set_color(sgl::BLACK);
+        sgl::draw_rectangle(10.0, 10.0, 30.0, 80.0);
+        set_color(sgl::RED);
+        sgl::fill_rectangle(10.0, 10.0, 30.0, 
                       static_cast<double>(bar.get_length())/bar.get_limit() * 80.0);
-        set_color(BLACK);
-        draw_text(std::to_string(counter.get()).c_str(), 50.0, 10.0, 18);
+        set_color(sgl::BLACK);
+        sgl::draw_text(std::to_string(counter.get()).c_str(), 50.0, 10.0, 18);
     }
     void key_pressed(int key, double x, double y) override {
         switch (key) {
-            case UP_KEY:
+            case sgl::UP_KEY:
                 counter.inc();
                 break;
-            case DOWN_KEY:
+            case sgl::DOWN_KEY:
                 counter.dec();
                 break;
             default:
