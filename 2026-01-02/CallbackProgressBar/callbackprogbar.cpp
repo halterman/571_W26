@@ -34,11 +34,11 @@ public:
     int get() const {
         return current_value;
     }
-    void inc() {  //  Increment
+    void inc() {  //  Increment if below upper limit
         if (current_value < 100)
             bar->set_length(++current_value);
     }
-    void dec() {  //  Decrement
+    void dec() {  //  Decrement if above lower limit
         if (current_value > 0)
             bar->set_length(--current_value);
     }
