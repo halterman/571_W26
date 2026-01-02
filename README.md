@@ -1,6 +1,6 @@
 # 571_W26
 
-Code we develop or consider in Fall 2023 CPTR 571 Software Archtecture
+Code we develop or consider in Winter 2026 CPTR 571 Software Archtecture
 
 Some of the code herein may be incomplete or incorrect. Its purpose is to illustrate concepts in the course.
 
