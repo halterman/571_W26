@@ -1,1 +1,1 @@
-This is just a simple program created to test github sunchronization. You can ignore this folder.
+This is just a simple program created to test github synchronization. You can ignore this folder.
