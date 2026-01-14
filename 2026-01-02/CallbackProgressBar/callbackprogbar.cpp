@@ -48,7 +48,7 @@ class BarWindow: public sgl::Window {
     Bar bar;
     Counter counter;
 public:
-    BarWindow(int lim) : Window("Callback", 100, 100, 100, 400, 0.0, 100.0, 0.0, 100.0), 
+    BarWindow(int lim) :Window("Callback", 100, 100, 100, 400, 0.0, 100.0, 0.0, 100.0), 
                          bar(Bar(lim)), counter(&bar) {}
     void paint() override {
         //  Draw the bar
