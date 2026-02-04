@@ -7,6 +7,7 @@ class Sequence {
     int size;
 public:
     Sequence(int n);
+    Sequence(const Sequence& other);
     ~Sequence();
     Sequence& operator=(const Sequence& other);
     void append(int elem);

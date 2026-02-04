@@ -19,6 +19,11 @@ void f() {
     for (int i = 0; i < 3; i++) 
         std::cout << s.get(i) << ' ';
     std::cout << '\n';
+
+    Sequence u = t;
+    for (int i = 0; i < 3; i++) 
+        std::cout << u.get(i) << ' ';
+    std::cout << '\n';
 }
 
 int main() {
