@@ -1,7 +1,7 @@
 //  The tightly coupled counter and progress bar
 
 #include <memory>
-#include "GL/SGL.h"
+#include "sgl.h"
 
 
 //  Represents a conceptual progress bar
